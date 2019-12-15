@@ -15,9 +15,10 @@ The .py scripts should be run in linux terminal
 This Project is a classification engine that processes social messages in times of disaster. 
 The algorithm classifies messages into more than 30 different categories based on their content.
 Each category represents a type of help/support which needs to be provided in times of disaster.
-The goal is to be able to quickly respond to a large amount of messages and provide adequate help in times of disaster.
+The goal is to be able to quickly respond to a large amount of messages and provide adequate help.
 
 ## Files
+Attached are two .csv files which contain the messages which are labeled into 36 different categries. Also 
 
 ## Results
 
