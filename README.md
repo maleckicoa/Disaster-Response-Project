@@ -45,13 +45,11 @@ For an overview of models which were used for experimentation please take a look
 
 To run the Web App, type the follwing code in your terminal:
 
-    1 "python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db"  
+    1. "python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db"  
     # to clean & store data
-    2 "python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl"                    
-    # to train the data
-    3 "python app/run.py" 
-    # to run the Web App
-    Finaly go to go to http://0.0.0.0:3001/ , where the App is hosted
+    2. "python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl"  # to train the data
+    3. "python app/run.py" # to run the Web App
+    4. Finaly go to go to http://0.0.0.0:3001/ , where the App is hosted
 
 
 ## Licensing <a name="Licensing"></a>
