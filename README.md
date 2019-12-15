@@ -30,7 +30,7 @@ The goal is to be able to quickly respond to a large amount of text messages and
     file "classifier.pkl"       - this is the output of the "train_classifier.py" script. It is the model saved with trained parameters.
     file "DisasterResponse.db" - this is the output of the "process_data.py" script. It is cleaned data now stored in a data base.
     
-3- NLP-Disaster.ipynb script contains various models which were used to test perfomance.
+3- NLP-Disaster.ipynb script contains various models whose perfomance was tested
 
 ## Results
 The End result of the Project is a Web App which takes text messages as input, and outputs the category/categories which are corresponding to the message content.
