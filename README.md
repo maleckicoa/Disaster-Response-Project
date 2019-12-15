@@ -25,7 +25,7 @@ The goal is to be able to quickly respond to a large amount of text messages and
 
     folder "data"       - contains the "process_data.py" script which cleans the data
     folder "models"     - holds the "train_classifier.py" script which transform the text data and applies a classification model.
-    folder "app"        - holds the "run.py" script which prepares data for the visualisation, and also the "go.html" and "master.html"                           files which provide the *visualisatin and the *app in the browser (see Results)
+    folder "app"        - holds the "run.py" script which prepares data for the visualisation, and also the "go.html" and "master.html" files which provide the *visualisatin and the *app in the browser (see Results)
     
     file "classifier.pkl"       - this is the output of the "train_classifier.py" script. It is the model saved with trained parameters.
     file "DisasterResponse.db" - this is the output of the "process_data.py" script. It is cleaned data now stored in a data base.
@@ -46,8 +46,7 @@ For an overview of models which were used for experimentation please take a look
 
 To run the Web App, type the follwing code in your terminal:
 
-    1. "python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db"  
-    # to clean & store data
+    1. "python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db" # to clean & store data
     2. "python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl"  # to train the data
     3. "python app/run.py" # to run the Web App
     4. Finaly go to go to http://0.0.0.0:3001/ , where the App is hosted
