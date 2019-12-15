@@ -1,0 +1,9 @@
+# IT-Trends
+
+### Table of Contents
+
+1. [Installation](#installation)
+2. [Motivation](#motivation)
+3. [Files](#files)
+4. [Results](#results)
+5. [Licensing](#licensing)
