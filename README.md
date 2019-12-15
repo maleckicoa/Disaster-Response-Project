@@ -33,7 +33,7 @@ The goal is to be able to quickly respond to a large amount of text messages and
 3- NLP-Disaster.ipynb script contains various models whose perfomance was tested
 
 ## Results
-The End result of the Project is a Web App which takes text messages as input, and outputs the category/categories which are corresponding to the message content.
+The End result of the Project is a Web App which takes text messages as input, and outputs the category/categories which are corresponding to the message content. Ideally, this output should summarize the essence of the message.
 
 The model used was Random Forest Classification. 
 Please note that I have faced time issues when training the model. Therefore the model was finaly trained on around 3K observations, although the data set hold 25K+ observations. Also I have applied the Grid Search in order to find the best parameters for the model, but due to time issues only some parameter values could be tested. I strongly encourage anyone who might have adequate processing power and would like to continue working on this project, to train the model on the whole training set and also to include more parameters in the Grid Search.
