@@ -12,28 +12,30 @@
 The .py scripts should be run in linux terminal
 
 ## Motivation <a name="Motivation"></a>
-This Project is a classification engine that processes social messages in times of disaster. 
-The algorithm classifies messages into more than 30 different categories based on their content.
+This Project is a classification engine that processes social text messages in times of disaster. 
+The algorithm classifies text messages into more than 30 different categories based on their content.
 Each category represents a type of help/support which needs to be provided in times of disaster.
-The goal is to be able to quickly respond to a large amount of messages and provide adequate help.
+The goal is to be able to quickly respond to a large amount of text messages and provide adequate help.
 
 ## Files
 1- Attached are two .csv files which contain the messages which are labeled into 36 different categries. 
 
 2- There is also the "Code and Files.zip" file which contains the following files and folders:
 
-    folder "data"   - contains the "process_data.py" script which cleans the data
-    folder "models" - holds the "train_classifier.py" script which transform the text data and applies a classification model.
-    folder "app"    - holds the "run.py" script which prepares data for the visualisation and the app, 
-                      and also the go.html and master.html files whichprovide the visualisation and the app
-    file "classifier.pkl"  - 
-    file "Disaster response.db"
+    folder "data"       - contains the "process_data.py" script which cleans the data
+    folder "models"     - holds the "train_classifier.py" script which transform the text data and applies a classification model.
+    folder "app"        - holds the "run.py" script which prepares data for the visualisation, and also the "go.html" and "master.html"                           files which provide the *visualisation and the *app in the browser
+    
+    file "classifier.pkl"       - this is the output of the "train_classifier.py" script. It is the model with trained parameters.
+    file "Disaster response.db" - this is the output of the "process_data.py" script. It is cleaned data now stored in a data base.
 
 ## Results
+The End result of the Project is a Web App which takes a text message as an input, and outputs the category/categories which are corresponding to the message content.
 
+
+The model used was Random Forest Classification. The overall perfomance was low with about 55%
+Please note that I have faced serious time issues when training the model. Therefore the model was finaly trained on around 3K observations, although the data set hold 25K+ observations. Also I have applied the Grid Search in order to find the best parameters for the model, but due to time issues only some parameter values could be tested. I strongly encourage anyone who might have adequate processing power and would like to continue working on this project, to train the model on the whole training set and also to include more parameters in the Grid Search.
 
 ## Licensing <a name="Licensing"></a>
-
-All credits for the datasets go to StackOverflow. 
-The data is generally free to use, all licencing details can be found here:
-https://www.kaggle.com/stackoverflow/stack-overflow-2018-developer-survey 
+All credits for the datasets go to Figure Eight: https://www.figure-eight.com/
+For licencing details please contact Figure Eight
