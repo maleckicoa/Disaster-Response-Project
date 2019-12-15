@@ -28,7 +28,7 @@ The goal is to be able to quickly respond to a large amount of text messages and
     folder "app"        - holds the "run.py" script which prepares data for the visualisation, and also the "go.html" and "master.html"                           files which provide the *visualisatin and the *app in the browser (see Results)
     
     file "classifier.pkl"       - this is the output of the "train_classifier.py" script. It is the model saved with trained parameters.
-    file "Disaster response.db" - this is the output of the "process_data.py" script. It is cleaned data now stored in a data base.
+    file "DisasterResponse.db" - this is the output of the "process_data.py" script. It is cleaned data now stored in a data base.
     
 3- NLP-Disaster.ipynb script contains various models which were used to test perfomance.
 
