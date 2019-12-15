@@ -10,7 +10,7 @@
 
 ## Installation <a name="installation"></a>
 The scripts should be run in linux terminal. 
-Only one .ipynb script is provided for experimentation and it shold be run in jupyter notebook
+Only one .ipynb script which is provided for experimentation should be run in jupyter notebook
 
 ## Motivation <a name="Motivation"></a>
 This Project is a classification engine that can be used to processes social text messages in times of disaster. 
