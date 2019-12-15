@@ -18,7 +18,16 @@ Each category represents a type of help/support which needs to be provided in ti
 The goal is to be able to quickly respond to a large amount of messages and provide adequate help.
 
 ## Files
-Attached are two .csv files which contain the messages which are labeled into 36 different categries. Also 
+1- Attached are two .csv files which contain the messages which are labeled into 36 different categries. 
+
+2- There is also the "Code and Files.zip" file which contains the following files and folders:
+
+    folder "data"   - contains the "process_data.py" script which cleans the data
+    folder "models" - holds the "train_classifier.py" script which transform the text data and applies a classification model.
+    folder "app"    - holds the "run.py" script which prepares data for the visualisation and the app, 
+                      and also the go.html and master.html files whichprovide the visualisation and the app
+    file "classifier.pkl"  - 
+    file "Disaster response.db"
 
 ## Results
 
