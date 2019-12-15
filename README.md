@@ -14,7 +14,7 @@ Only one .ipynb script which is provided for experimentation should be run in ju
 
 ## Motivation <a name="Motivation"></a>
 This Project is a classification engine that can be used to processes social text messages in times of disaster. 
-The algorithm classifies text messages into more than 30 different categories based on their content.
+The algorithm classifies text messages into more 36 different categories based on their content.
 Each category represents a type of help/support which needs to be provided in times of disaster.
 The goal is to be able to quickly respond to a large amount of text messages and provide adequate help.
 
@@ -36,15 +36,15 @@ The goal is to be able to quickly respond to a large amount of text messages and
 The End result of the Project is a Web App which takes text messages as input, and outputs the category/categories which are corresponding to the message content. Ideally, this output should summarize the essence of the message.
 
 The model used was Random Forest Classification. 
-Please note that I have faced time issues when training the model. Therefore the model was finaly trained on around 3K observations, although the data set hold 25K+ observations. Also I have applied the Grid Search in order to find the best parameters for the model, but due to time issues only some parameter values could be tested. I strongly encourage anyone who might have adequate processing power and would like to continue working on this project, to train the model on the whole training set and also to include more parameters in the Grid Search.
+Please note that I have faced time issues when training the model. Therefore the model was finaly trained on around 3K observations, although the data set holds 25K+ observations. Also I have applied the Grid Search in order to find the best parameters for the model, but due to time issues only some parameter values could be tested. I strongly encourage anyone who might have adequate processing power and would like to continue working on this project, to train the model on the whole training set and also to include more parameters in the Grid Search.
 
 The overall perfomance was low with about 55% in Averaged Balanced Accuracy 
-(This is the average accuracy score across 35 categories; Note that Accuracy used was Balanced Accuracy, because the data set is havily unbalanced). 
+(This is the average accuracy score across 36 categories; Note that Accuracy used was Balanced Accuracy, because the data set is heavily unbalanced). 
 However other algorithms might show better performance, but are harder to train. (e.g. SVM model showed 64% Average balanced Accuracy). 
 For an overview of models which were used for experimentation please take a look at the the NLP-Disaster.ipynb file
 
 
-To run the Web App, type the follwing code in your terminal:
+To run the Web App, type the following code in your terminal:
 
     1. "python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db" # to clean & store data
     2. "python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl"  # to train the data
